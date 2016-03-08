@@ -2,6 +2,6 @@ class SearchController < ApplicationController
   def index
     bbs = BestBuyService.new
     reply = JSON.parse(bbs.search(params["search"]))
-    binding.pry
+    @best_buy_objects = BestBuyPresenter.new(reply)
   end
 end

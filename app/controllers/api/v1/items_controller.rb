@@ -2,8 +2,7 @@ class Api::V1::ItemsController < ApplicationController
   # respond_to :json
 
   def index
-    # respond_with ({"hey" => "x"})
-    render json: ({"hey" => "x"})
+    render json: Item.index_response
   end
 
   def show

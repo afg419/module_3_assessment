@@ -9,4 +9,16 @@ class Api::V1::ItemsController < ApplicationController
     item = Item.where(id: params[:id]).index_response.first
     render json: item
   end
+
+  def destroy
+    item = Item.find_by(id: params[:id])
+    if item
+      item.destroy
+      response.status = 204
+      render json: ({reply: "Item was deleted"})
+    else
+      response.status = 400
+      render json: ({reply: "Item did not exist in database"})
+    end
+  end
 end

@@ -1,5 +1,5 @@
 class Api::V1::ItemsController < ApplicationController
-  # respond_to :json
+  respond_to :json
 
   def index
     render json: Item.index_response

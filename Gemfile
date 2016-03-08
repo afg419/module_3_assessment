@@ -13,7 +13,7 @@ gem "faker"
 gem "haml-rails"
 gem "therubyracer"
 gem "figaro"
-gem 'responders'
+gem 'responders', "~>2.0"
 gem 'rails_12factor', group: :production
 
 group :development, :test do

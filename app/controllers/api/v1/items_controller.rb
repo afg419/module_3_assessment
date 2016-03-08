@@ -6,6 +6,7 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.find(params[:id].to_i)
+    item = Item.where(id: params[:id]).index_response.first
+    render json: item
   end
 end

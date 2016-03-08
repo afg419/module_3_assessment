@@ -5,4 +5,8 @@ class Item < ActiveRecord::Base
   def self.index_response
     pluck(:name, :description, :image_url)
   end
+
+  def show_response
+    pluck(:name, :description, :image_url)    
+  end
 end

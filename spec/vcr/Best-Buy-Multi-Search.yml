@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(longDescription=sennheiser&longDescription=headphones&longDescription=white)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=sku,name,salePrice,shortDescription,image,customerReviewAverage
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bestbuy.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-01.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '405'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 18:17:03 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 0,
+          "total": 0,
+          "currentPage": 1,
+          "totalPages": 0,
+          "queryTime": "0.006",
+          "totalTime": "0.007",
+          "partial": false,
+          "canonicalUrl": "/v1/products(longDescription=\"sennheiser\"&longDescription=\"headphones\"&longDescription=\"white\")?show=sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "products": [
+
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 18:17:03 GMT
+recorded_with: VCR 3.0.1

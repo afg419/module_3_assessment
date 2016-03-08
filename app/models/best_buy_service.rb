@@ -22,7 +22,14 @@ class BestBuyService
   def search(search_value)
     JSON.parse(get("search=#{search_value}","format=json&show=sku,name,salePrice,shortDescription,image,customerReviewAverage&pageSize=15"))
   end
+
+  def multi_search(search_term_array)
+    search_value = search_term_array.join("&longDescription=").prepend("longDescription=")
+    JSON.parse(get("#{search_value}","format=json&show=sku,name,salePrice,shortDescription,image,customerReviewAverage&pageSize=15"))
+  end
 end
+
+# 'https://api.bestbuy.com/v1/products(longDescription=iPhone*|sku=7619002)?show=sku,name&pageSize=15&page=5&apiKey=YourAPIKey&format=json'
 
   # products(search=sennheiser)
   # url + search=sennheiser + "format=json&show=sku,name,salePrice,image"

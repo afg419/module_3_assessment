@@ -1,6 +1,7 @@
-RSpec.feature "Big ol Feature", type: :feature do
-  scenario "A logged in user can get to new entry page" do
-    VCR.use_cassette '<casette> ' do
+RSpec.feature "User can search BestBuy", type: :feature do
+  scenario "A user submit search queries to BestBuy" do
+    VCR.use_cassette 'Best-Buy-Search' do
+      
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/products(longDescription=sennheiser&longDescription=headphones&longDescription=white)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=sku,name,salePrice,shortDescription,image,customerReviewAverage
+    uri: https://api.bestbuy.com/v1/products(longDescription=sennheiser&longDescription=headphones)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=sku,name,salePrice,shortDescription,image,customerReviewAverage
     body:
       encoding: US-ASCII
       string: ''
@@ -21,15 +21,15 @@ http_interactions:
       message: OK
     headers:
       X-Mashery-Responder:
-      - prod-j-worker-lax-01.mashery.com
+      - prod-j-worker-lax-02.mashery.com
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '405'
+      - '379'
       Server:
       - thin 1.6.1 codename Death Proof
       Date:
-      - Tue, 08 Mar 2016 18:17:03 GMT
+      - Tue, 08 Mar 2016 18:19:13 GMT
       Connection:
       - close
     body:
@@ -41,14 +41,14 @@ http_interactions:
           "total": 0,
           "currentPage": 1,
           "totalPages": 0,
-          "queryTime": "0.006",
-          "totalTime": "0.007",
+          "queryTime": "0.004",
+          "totalTime": "0.005",
           "partial": false,
-          "canonicalUrl": "/v1/products(longDescription=\"sennheiser\"&longDescription=\"headphones\"&longDescription=\"white\")?show=sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "canonicalUrl": "/v1/products(longDescription=\"sennheiser\"&longDescription=\"headphones\")?show=sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
           "products": [
 
           ]
         }
     http_version: 
-  recorded_at: Tue, 08 Mar 2016 18:17:03 GMT
+  recorded_at: Tue, 08 Mar 2016 18:19:13 GMT
 recorded_with: VCR 3.0.1

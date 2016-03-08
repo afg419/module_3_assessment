@@ -1,0 +1,188 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(longDescription=sennheiser*&longDescription=headphones*)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=longDescription,sku,name,salePrice,shortDescription,image,customerReviewAverage
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bestbuy.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-01.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '11317'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 18:26:42 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 15,
+          "total": 74,
+          "currentPage": 1,
+          "totalPages": 5,
+          "queryTime": "0.005",
+          "totalTime": "0.035",
+          "partial": false,
+          "canonicalUrl": "/v1/products(longDescription=\"sennheiser*\"&longDescription=\"headphones*\")?show=longDescription,sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "products": [
+            {
+              "longDescription": "Enjoy your music with these Sennheiser CX 1.00 BLACK earbud headphones, which feature a noise-blocking design that helps eliminate distractions, so you can focus on audio playback. The ultrasmall design ensures a comfortable fit.",
+              "sku": 9068146,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - Black",
+              "salePrice": 44.95,
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068146_sa.jpg",
+              "customerReviewAverage": "5.0"
+            },
+            {
+              "longDescription": "Enjoy your music with these Sennheiser CX 1.00 WHITE earbud headphones, which feature a noise-blocking design that helps eliminate distractions, so you can focus on audio playback. The ultrasmall design ensures a comfortable fit.",
+              "sku": 9068191,
+              "name": "Sennheiser - CX 1.00 Earbud Headphones - White",
+              "salePrice": 44.95,
+              "shortDescription": "SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068191_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "longDescription": "These Sennheiser CX 2.00G BLACK earbud headphones come with 4 ear adapter sizes, so you can achieve a custom fit and reduce ambient noise. A 3-button in-line remote with integrated microphone allows you to control functions and communicate hands-free.",
+              "sku": 9068164,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - Black",
+              "salePrice": 54.95,
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068164_sa.jpg",
+              "customerReviewAverage": "4.0"
+            },
+            {
+              "longDescription": "These Sennheiser CX 2.00G WHITE earbud headphones come with 4 ear adapter sizes, so you can achieve a custom fit and reduce ambient noise. A 3-button in-line remote with integrated microphone allows you to control functions and communicate hands-free.",
+              "sku": 9068155,
+              "name": "Sennheiser - CX 2.00G Earbud Headphones - White",
+              "salePrice": 54.95,
+              "shortDescription": "SENNHEISER CX 2.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068155_sa.jpg",
+              "customerReviewAverage": "1.0"
+            },
+            {
+              "longDescription": "Manage functions and communicate hands-free with these Sennheiser CX 2.00I BLACK earbud headphones, which feature a 3-button in-line remote with integrated microphone for use with select devices. Four ear adapter sizes help you achieve a custom fit.",
+              "sku": 9068031,
+              "name": "Sennheiser - CX 2.00i Earbud Headphones - Black",
+              "salePrice": 54.95,
+              "shortDescription": "SENNHEISER CX 2.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068031_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "longDescription": "Manage functions and communicate hands-free with these Sennheiser CX 2.00I WHITE earbud headphones, which feature a 3-button in-line remote with integrated microphone for use with select devices. Four ear adapter sizes help you achieve a custom fit.",
+              "sku": 9068182,
+              "name": "Sennheiser - CX 2.00i Earbud Headphones - White",
+              "salePrice": 54.95,
+              "shortDescription": "SENNHEISER CX 2.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated microphone; 4 ear adapter sizes; 3.9' cable; 3.5mm angled plug",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068182_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "longDescription": "These Sennheiser CX 3.00 BLACK earbud headphones feature dynamic transducers that produce rich audio and 4 ear adapter sizes that offer ambient noise cancellation, so you can enjoy immersive listening. A 3.9' cable resists tangles for neat storage.",
+              "sku": 9068119,
+              "name": "Sennheiser - CX 3.00 Earbud Headphones - Black",
+              "salePrice": 54.95,
+              "shortDescription": "SENNHEISER CX 3.00 Earbud Headphones: Dynamic transducers; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068119_sa.jpg",
+              "customerReviewAverage": "3.5"
+            },
+            {
+              "longDescription": "These Sennheiser CX 3.00 RED earbud headphones feature dynamic transducers that produce rich audio and 4 ear adapter sizes that offer ambient noise cancellation, so you can enjoy immersive listening. A 3.9' cable resists tangles for neat storage.",
+              "sku": 9068022,
+              "name": "Sennheiser - CX 3.00 Earbud Headphones - Red",
+              "salePrice": 51.99,
+              "shortDescription": "SENNHEISER CX 3.00 Earbud Headphones: Dynamic transducers; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068022_sa.jpg",
+              "customerReviewAverage": "3.5"
+            },
+            {
+              "longDescription": "These Sennheiser CX 3.00 WHITE earbud headphones feature dynamic transducers that produce rich audio and 4 ear adapter sizes that offer ambient noise cancellation, so you can enjoy immersive listening. A 3.9' cable resists tangles for neat storage.",
+              "sku": 9068004,
+              "name": "Sennheiser - CX 3.00 Earbud Headphones - White",
+              "salePrice": 45.99,
+              "shortDescription": "SENNHEISER CX 3.00 Earbud Headphones: Dynamic transducers; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068004_sa.jpg",
+              "customerReviewAverage": "3.5"
+            },
+            {
+              "longDescription": "Enjoy immersive listening with these Sennheiser CX 5.00G BLACK earbud headphones, which come with 4 ear adapter sizes for optimal noise blocking. A 3-button in-line remote with omnidirectional microphone lets you enjoy hands-free conversations.",
+              "sku": 9068137,
+              "name": "Sennheiser - CX 5.00G Earbud Headphones - Black",
+              "salePrice": 89.95,
+              "shortDescription": "SENNHEISER CX 5.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068137_sa.jpg",
+              "customerReviewAverage": "2.0"
+            },
+            {
+              "longDescription": "Enjoy immersive listening with these Sennheiser CX 5.00G WHITE earbud headphones, which come with 4 ear adapter sizes for optimal noise blocking. A 3-button in-line remote with omnidirectional microphone lets you enjoy hands-free conversations.",
+              "sku": 9068013,
+              "name": "Sennheiser - CX 5.00G Earbud Headphones - White",
+              "salePrice": 89.95,
+              "shortDescription": "SENNHEISER CX 5.00G Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug; includes a carrying case",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068013_sa.jpg",
+              "customerReviewAverage": "2.0"
+            },
+            {
+              "longDescription": "These Sennheiser CX 5.00I BLACK earbud headphones feature a 3-button in-line remote with omnidirectional microphone, so you can enjoy hands-free conversations. Four ear adapter sizes block ambient noise to promote immersive listening.",
+              "sku": 9068173,
+              "name": "Sennheiser - CX 5.00i Earbud Headphones - Black",
+              "salePrice": 89.95,
+              "shortDescription": "SENNHEISER CX 5.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068173_sa.jpg",
+              "customerReviewAverage": "2.0"
+            },
+            {
+              "longDescription": "These Sennheiser CX 5.00I WHITE earbud headphones feature a 3-button in-line remote with omnidirectional microphone, so you can enjoy hands-free conversations. Four ear adapter sizes block ambient noise to promote immersive listening.",
+              "sku": 9068128,
+              "name": "Sennheiser - CX 5.00i Earbud Headphones - White",
+              "salePrice": 89.95,
+              "shortDescription": "SENNHEISER CX 5.00i Earbud Headphones: Dynamic transducers; 3-button in-line remote with integrated omnidirectional microphone; ergonomic, angled design; 4 ear adapter sizes; 3.9' elliptical, tangle-free cable; 3.5mm angled plug",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9068/9068128_sa.jpg",
+              "customerReviewAverage": "2.0"
+            },
+            {
+              "longDescription": "Learn more about Magnolia Premium Installation   These Sennheiser IE 60 earbud headphones feature dynamic drivers with powerful neodymium magnets for deep, robust bass. The sound-isolating design reduces up to 20dB of ambient noise for clear audio.",
+              "sku": 3793876,
+              "name": "Sennheiser - Earbud Headphones - Black",
+              "salePrice": 249.99,
+              "shortDescription": "From our expanded online assortment; insulates against noise; neodymium magnets; dynamic drivers",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/3793/3793876_sa.jpg",
+              "customerReviewAverage": "5.0"
+            },
+            {
+              "longDescription": "High-power dynamic speaker systems and a noise-attenuating design help these Sennheiser CX 275S earbud headphones deliver your favorite tunes in crystal clarity. Control music and hands-free calls using the in-line remote and microphone.",
+              "sku": 6924712,
+              "name": "Sennheiser - Earbud Headphones - Black",
+              "salePrice": 69.99,
+              "shortDescription": "High-power dynamic speaker systems; noise attenuation; in-line remote and microphone",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/6924/6924712_sa.jpg",
+              "customerReviewAverage": "4.2"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 18:26:42 GMT
+recorded_with: VCR 3.0.1

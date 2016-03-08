@@ -24,8 +24,9 @@ class BestBuyService
   end
 
   def multi_search(search_term_array)
+    search_term_array.map!{|x| "#{x}*"}
     search_value = search_term_array.join("&longDescription=").prepend("longDescription=")
-    JSON.parse(get("#{search_value}","format=json&show=sku,name,salePrice,shortDescription,image,customerReviewAverage&pageSize=15"))
+    JSON.parse(get("#{search_value}","format=json&show=longDescription,sku,name,salePrice,shortDescription,image,customerReviewAverage&pageSize=15"))
   end
 end
 

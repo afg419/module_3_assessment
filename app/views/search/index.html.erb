@@ -1,0 +1,10 @@
+<% @best_buy_objects.products.each do |product| %>
+<h3 class="product">name: <%= product.name %></h3>
+<ul>
+  <li>Sku: <%= product.sku %></li>
+  <li>Sale Price: $<%= product.salePrice %></li>
+  <li>Image_url: <%= product.image %></li>
+  <li>Customer Review Average: <%= product.customerReviewAverage %></li>
+  <li>Description: <%= product.shortDescription %></li>
+</ul>
+<% end %>

@@ -22,13 +22,12 @@ class BestBuyService
   def search(search_value)
     JSON.parse(get("search=#{search_value}","format=json&show=sku,name,salePrice,shortDescription,image,customerReviewAverage&pageSize=15"))
   end
-
 end
 
   # products(search=sennheiser)
   # url + search=sennheiser + "format=json&show=sku,name,salePrice,image"
 
-  "https://api.bestbuy.com/v1/products(search=oven&search=stainless&search=steel)?format=json&show=sku,name,salePrice&apiKey=YourAPIKey"
+  # "https://api.bestbuy.com/v1/products(search=oven&search=stainless&search=steel)?format=json&show=sku,name,salePrice&apiKey=YourAPIKey"
   # get("products/8880044.json", "show=sku,name,salePrice")
   # "https://api.bestbuy.com/v1/products/8880044.json?show=sku,name,salePrice&apiKey=YourAPIKeyend"
 # req.body = "grant_type=authorization_code&code=#{code}&redirect_uri=http://localhost:3000/reddit/auth"

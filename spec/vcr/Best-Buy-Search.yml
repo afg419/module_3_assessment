@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bestbuy.com/v1/products(search=sennheiser)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&show=sku,name,salePrice,image
+    uri: https://api.bestbuy.com/v1/products(search=sennheiser)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=sku,name,salePrice,shortDescription,image,customerReviewAverage
     body:
       encoding: US-ASCII
       string: ''
@@ -21,15 +21,15 @@ http_interactions:
       message: OK
     headers:
       X-Mashery-Responder:
-      - prod-j-worker-lax-01.mashery.com
+      - prod-j-worker-lax-02.mashery.com
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '2449'
+      - '7033'
       Server:
       - thin 1.6.1 codename Death Proof
       Date:
-      - Tue, 08 Mar 2016 17:21:54 GMT
+      - Tue, 08 Mar 2016 17:35:37 GMT
       Connection:
       - close
     body:
@@ -37,77 +37,137 @@ http_interactions:
       string: |-
         {
           "from": 1,
-          "to": 10,
+          "to": 15,
           "total": 165,
           "currentPage": 1,
-          "totalPages": 17,
+          "totalPages": 11,
           "queryTime": "0.004",
-          "totalTime": "0.125",
+          "totalTime": "0.039",
           "partial": false,
-          "canonicalUrl": "/v1/products(search=\"sennheiser\")?show=sku,name,salePrice,image&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "canonicalUrl": "/v1/products(search=\"sennheiser\")?show=sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
           "products": [
             {
               "sku": 4763330,
               "name": "Galaxy Audio - Headset Microphone - Beige",
               "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763330_sa.jpg"
+              "shortDescription": "GALAXY AUDIO Headset Microphone: Crafted for most wireless transmitters; can be used with a JIB/PB; works with most PC sound cards; flexible fit design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763330_sa.jpg",
+              "customerReviewAverage": null
             },
             {
               "sku": 4763305,
               "name": "Galaxy Audio - Headset Microphone - Black",
               "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763305_sa.jpg"
+              "shortDescription": "GALAXY AUDIO Headset Microphone: Compatible with most wireless transmitters; can be used with a JIB/PB; works with most PC sound cards; flexible fit design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763305_sa.jpg",
+              "customerReviewAverage": null
             },
             {
               "sku": 4763306,
               "name": "Galaxy Audio - Headset Microphone - Black",
               "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763306_sa.jpg"
+              "shortDescription": "GALAXY AUDIO Headset Microphone: Crafted for most wireless transmitters; can be used with a JIB/PB; works with most PC sound cards; flexible fit design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763306_sa.jpg",
+              "customerReviewAverage": null
             },
             {
               "sku": 4763315,
               "name": "Galaxy Audio - Headset Microphone - Cocoa",
               "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763315_sa.jpg"
+              "shortDescription": "GALAXY AUDIO Headset Microphone: Crafted for most wireless transmitters; can be used with a JIB/PB; works with most PC sound cards; flexible fit design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763315_sa.jpg",
+              "customerReviewAverage": null
             },
             {
               "sku": 4763316,
               "name": "Galaxy Audio - Headset Microphone - Cocoa",
               "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763316_sa.jpg"
+              "shortDescription": "GALAXY AUDIO Headset Microphone: Compatible with most wireless transmitters; can be used with a JIB/PB; works with most PC sound cards; flexible fit design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763316_sa.jpg",
+              "customerReviewAverage": null
             },
             {
               "sku": 4763322,
               "name": "Galaxy Audio - Omnidirectional Headset Microphone - Beige",
               "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763322_sa.jpg"
+              "shortDescription": "GALAXY AUDIO Omnidirectional Headset Microphone: Designed for select Sennheiser wireless devices; omnidirectional polar pattern; 20Hz - 20kHz frequency response; -65dB sensitivity; flexible fit design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763322_sa.jpg",
+              "customerReviewAverage": null
             },
             {
               "sku": 2602352,
               "name": "Sennheiser - Active Noise-Canceling Headphones - Black",
               "salePrice": 229.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/2602/2602352_sa.jpg"
+              "shortDescription": "From our expanded online assortment; TalkThrough function; NoiseGard Digital noise cancellation; 10mm drivers",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/2602/2602352_sa.jpg",
+              "customerReviewAverage": "2.7"
             },
             {
               "sku": 1700513,
               "name": "Sennheiser - Audiophile Over-the-Ear Headphones - Titan",
               "salePrice": 179.98,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700513_sa.jpg"
-            },
-            {
-              "sku": 9637018,
-              "name": "Sennheiser - Binaural Headphone - Black",
-              "salePrice": 199.99,
-              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9637/9637018_sa.jpg"
+              "shortDescription": "Eargonomic Acoustic Refinement technology; Duofol diaphragm technology; neodymium ferrous magnet; aluminum voice coils",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700513_sa.jpg",
+              "customerReviewAverage": "4.5"
             },
             {
               "sku": 9636974,
               "name": "Sennheiser - Binaural Headphone - Black",
               "salePrice": 69.99,
-              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9636/9636974_rc.jpg"
+              "shortDescription": "Wired Connectivity - Surround - Over-the-head - Black",
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9636/9636974_rc.jpg",
+              "customerReviewAverage": "4.4"
+            },
+            {
+              "sku": 9637018,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "salePrice": 199.99,
+              "shortDescription": "Stereo - Black - Wireless - RF - 60 ft - 32 Ohm - 18 Hz 21 kHz - Over-the-head - Binaural - Circumaural",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9637/9637018_sa.jpg",
+              "customerReviewAverage": "4.5"
+            },
+            {
+              "sku": 9678429,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "salePrice": 629.95,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 626-668MHz frequency range",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678429_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 9678447,
+              "name": "Sennheiser - Camera-Mount Wireless Microphone System - Black",
+              "salePrice": 629.95,
+              "shortDescription": "SENNHEISER Camera-Mount Wireless Microphone System: Invisible clip-on microphone; sturdy metal housing; automatic frequency management; easy-to-read illuminated display; 4-level battery indicator; 566-608MHz frequency range",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9678/9678447_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 6131454,
+              "name": "Sennheiser - CH 650 S 10' Balanced Headphone Cable - Black",
+              "salePrice": 239.99,
+              "shortDescription": "SENNHEISER CH 650 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphone amplifiers; oxygen-free copper cables; gold-plated contacts; 4pole XLR with 2 mini plugs",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/6131/6131454_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 6131463,
+              "name": "Sennheiser - CH 700 S 10' Balanced Headphone Cable - Black",
+              "salePrice": 319.99,
+              "shortDescription": "SENNHEISER CH 700 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with two 2.5mm jacks",
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131463_rc.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 6131445,
+              "name": "Sennheiser - CH 800 S 10' Balanced Headphone Cable - Black",
+              "salePrice": 379.99,
+              "shortDescription": "SENNHEISER CH 800 S 10' Balanced Headphone Cable: Compatible with Sennheiser headphones and headphone amplifiers; oxygen-free copper cables with silver coating; gold-plated contacts; 4pole XLR with 2 ODU connectors",
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/6131/6131445_rc.jpg",
+              "customerReviewAverage": null
             }
           ]
         }
     http_version: 
-  recorded_at: Tue, 08 Mar 2016 17:21:54 GMT
+  recorded_at: Tue, 08 Mar 2016 17:35:37 GMT
 recorded_with: VCR 3.0.1

@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
   def index
     bbs = BestBuyService.new
-    reply = JSON.parse(bbs.search(params["search"]))
+    reply = bbs.search(params["search"])
     @best_buy_objects = BestBuyPresenter.new(reply)
   end
 end

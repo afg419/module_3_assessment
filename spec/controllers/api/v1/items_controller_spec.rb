@@ -36,4 +36,15 @@ RSpec.describe Api::V1::ItemsController, type: :controller do
     expect(response.body).to eq "{\"reply\":\"Item did not exist in database\"}"
   end
 
+  it "creates an item" do
+    n = 0
+    params = {item: {name: "item#{n}", description: "description#{n}", image_url: "image#{n}"}}
+    expect(Item.count).to eq 0
+
+    post :create, params
+    expect(response.status).to eq 201
+    expect(response.body).to eq "[\"item0\",\"description0\",\"image0\"]"
+    expect(Item.count).to eq 1
+  end
+
 end

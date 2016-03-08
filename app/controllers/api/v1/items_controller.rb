@@ -21,4 +21,21 @@ class Api::V1::ItemsController < ApplicationController
       render json: ({reply: "Item did not exist in database"})
     end
   end
+
+  def create
+    item = Item.new(item_params)
+    if item.save
+      response.status = 201
+      render json: [item.name, item.description, item.image_url]
+    else
+      response.status = 400
+      render json: ({reply: "Item was not created"})
+    end
+  end
+
+  private
+
+  def item_params
+    params.require(:item).permit(:name, :description, :image_url)
+  end
 end

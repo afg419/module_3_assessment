@@ -1,0 +1,173 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(search=boot)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=sku,name,salePrice,shortDescription,image,customerReviewAverage
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bestbuy.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-04.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '5121'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 18:46:13 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 15,
+          "total": 828,
+          "currentPage": 1,
+          "totalPages": 56,
+          "queryTime": "0.005",
+          "totalTime": "0.048",
+          "partial": false,
+          "canonicalUrl": "/v1/products(search=\"boot\")?show=sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "products": [
+            {
+              "sku": 8911813,
+              "name": "10 Minute Solution: Hot Body Boot Camp (DVD) (Colorized)",
+              "salePrice": 9.99,
+              "shortDescription": null,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/8911/8911813_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 7316647,
+              "name": "10 Minute Solution: Kickbox Bootcamp (DVD)",
+              "salePrice": 4.99,
+              "shortDescription": null,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/7316/7316647_sa.jpg",
+              "customerReviewAverage": "5.0"
+            },
+            {
+              "sku": 1022328,
+              "name": "10 Minute Solution: Ultimate Boot Camp (DVD)",
+              "salePrice": 4.99,
+              "shortDescription": null,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1022/1022328_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 29926015,
+              "name": "100 Problems [12inch Vinyl Disc] [EP] - 12-Inch Single",
+              "salePrice": 13.99,
+              "shortDescription": null,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/2992/29926015.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 1830004,
+              "name": "1937-1938 - CD",
+              "salePrice": 24.99,
+              "shortDescription": null,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/1830/1830004.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 15879818,
+              "name": "1st Booty on Duty... [12inch Vinyl Disc] [Single]. - 12-Inch Single",
+              "salePrice": 4.99,
+              "shortDescription": null,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/1587/15879818.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 9255053,
+              "name": "3 Ring Circus - The Bootleg... [PA] [Digipak] - CD",
+              "salePrice": 11.99,
+              "shortDescription": null,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9255/9255053_sa.jpg",
+              "customerReviewAverage": "4.5"
+            },
+            {
+              "sku": 18304021,
+              "name": "3. Telepathics Meh In-Sect Connection [Digipak] - CD",
+              "salePrice": 10.99,
+              "shortDescription": null,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/1830/18304021.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 5481686,
+              "name": "A Night at the Booty Bar [PA] - CD",
+              "salePrice": 11.99,
+              "shortDescription": null,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/5481/5481686.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 20442855,
+              "name": "A Tribute to the Songs of Bill & Gloria Gaither - CD",
+              "salePrice": 13.99,
+              "shortDescription": null,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/2044/20442855_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 10695483,
+              "name": "Acclaimed - CD",
+              "salePrice": 15.99,
+              "shortDescription": null,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1069/10695483_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 4729608,
+              "name": "Accu-Case - F4 Par Gig Bag - Black",
+              "salePrice": 39.99,
+              "shortDescription": "ACCU-CASE F4 Par Gig Bag: Fits up to 4 slim LED Par fixtures; 4 compartments; removable padded dividers; front pockets; compact design",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4729/4729608_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 24657439,
+              "name": "Ace Of Clubs / Another Mans Boots (Black & White) (DVD)",
+              "salePrice": 5.99,
+              "shortDescription": null,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/2465/24657439.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 4963801,
+              "name": "Acer - 11.6\" Chromebook - Intel Celeron - 2GB - 16GB eMMC Solid State Drive - White",
+              "salePrice": 179.99,
+              "shortDescription": "Technical details: Intel&#191; Celeron&#8482; processor; 11.6\" display; 2GB memory; 16GB solid state driveSpecial features: Bluetooth; HDMI outputNote: DVD/CD drive not included",
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/4963/4963801_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "sku": 8603277,
+              "name": "Acer - 13.3\" Chromebook - NVIDIA Tegra K1 - 2GB Memory - 16GB Flash Memory - Moonstone White",
+              "salePrice": 259.99,
+              "shortDescription": "Chrome OS 64-bitTechnical details: NVIDIA Tegra K1 processor; 13.3\" display; 2GB memory; 16GB flash memorySpecial features: Bluetooth; HDMI outputNote: DVD/CD drive not included",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/8603/8603277_sa.jpg",
+              "customerReviewAverage": "4.1"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 18:46:13 GMT
+recorded_with: VCR 3.0.1

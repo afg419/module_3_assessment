@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(search=sennheiser)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&show=sku,name,salePrice,image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bestbuy.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-01.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2449'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 17:21:54 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 10,
+          "total": 165,
+          "currentPage": 1,
+          "totalPages": 17,
+          "queryTime": "0.004",
+          "totalTime": "0.125",
+          "partial": false,
+          "canonicalUrl": "/v1/products(search=\"sennheiser\")?show=sku,name,salePrice,image&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "products": [
+            {
+              "sku": 4763330,
+              "name": "Galaxy Audio - Headset Microphone - Beige",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763330_sa.jpg"
+            },
+            {
+              "sku": 4763305,
+              "name": "Galaxy Audio - Headset Microphone - Black",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763305_sa.jpg"
+            },
+            {
+              "sku": 4763306,
+              "name": "Galaxy Audio - Headset Microphone - Black",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763306_sa.jpg"
+            },
+            {
+              "sku": 4763315,
+              "name": "Galaxy Audio - Headset Microphone - Cocoa",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763315_sa.jpg"
+            },
+            {
+              "sku": 4763316,
+              "name": "Galaxy Audio - Headset Microphone - Cocoa",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763316_sa.jpg"
+            },
+            {
+              "sku": 4763322,
+              "name": "Galaxy Audio - Omnidirectional Headset Microphone - Beige",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/4763/4763322_sa.jpg"
+            },
+            {
+              "sku": 2602352,
+              "name": "Sennheiser - Active Noise-Canceling Headphones - Black",
+              "salePrice": 229.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/2602/2602352_sa.jpg"
+            },
+            {
+              "sku": 1700513,
+              "name": "Sennheiser - Audiophile Over-the-Ear Headphones - Titan",
+              "salePrice": 179.98,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1700/1700513_sa.jpg"
+            },
+            {
+              "sku": 9637018,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "salePrice": 199.99,
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/9637/9637018_sa.jpg"
+            },
+            {
+              "sku": 9636974,
+              "name": "Sennheiser - Binaural Headphone - Black",
+              "salePrice": 69.99,
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9636/9636974_rc.jpg"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 17:21:54 GMT
+recorded_with: VCR 3.0.1

@@ -19,6 +19,10 @@ class BestBuyService
     res.body
   end
 
+  def search(search_value)
+    JSON.parse(get("search=#{search_value}","format=json&show=sku,name,salePrice,shortDescription,image,customerReviewAverage"))
+  end
+
 end
 
   # products(search=sennheiser)

@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/products(longDescription=boot*&longDescription=brown*)?apiKey=m7sfn4nqtmg8u96aakbfz49e&format=json&pageSize=15&show=longDescription,sku,name,salePrice,shortDescription,image,customerReviewAverage
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bestbuy.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-lax-01.mashery.com
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '3601'
+      Server:
+      - thin 1.6.1 codename Death Proof
+      Date:
+      - Tue, 08 Mar 2016 18:51:32 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "from": 1,
+          "to": 2,
+          "total": 2,
+          "currentPage": 1,
+          "totalPages": 1,
+          "queryTime": "0.021",
+          "totalTime": "0.029",
+          "partial": false,
+          "canonicalUrl": "/v1/products(longDescription=\"boot*\"&longDescription=\"brown*\")?show=longDescription,sku,name,salePrice,shortDescription,image,customerReviewAverage&format=json&apiKey=m7sfn4nqtmg8u96aakbfz49e",
+          "products": [
+            {
+              "longDescription": "Reproduce your favorite pop and rock hits with this compilation of sheet music that features piano, vocal and guitar instruction for 200 songs. Tracks Included 1. Amazed 2. Brown Eyed Girl 3. California Dreamin' 4. Clocks 5. Come Sail Away 6. Come to My Window 7. Dancing Queen 8. Do You Really Want to Hurt Me 9. Dust in the Wind 10. Easy 11. Fast Car 12. Free Bird 13. Good Vibrations 14. Happy Together 15. Hot Hot Hot 16. I Hope You Dance 17. I Will Remember You 18. I Will Survive 19. Jack and Diane 20. Landslide 21. Oops!...I Did It Again 22. Smooth 23. Tears in Heaven 24. These Boots Are Made for Walkin' 25. Time After Time 26. Walking in Memphis 27. Werewolves of London 28. You Can't Hurry Love 29. You've Got a Friend 30. You've Lost That Lovin' Feelin' And more.",
+              "sku": 1174704,
+              "name": "Hal Leonard - Various Artists: Piano White Pages Sheet Music - Multi",
+              "salePrice": 29.99,
+              "shortDescription": "From our expanded online assortment; piano, vocal and guitar sheet music for a compilation of pop and rock songs",
+              "image": "http://images.bestbuy.com/BestBuy_US/images/products/1174/1174704_sa.jpg",
+              "customerReviewAverage": null
+            },
+            {
+              "longDescription": "Get the party started by playing your favorite classic hits using this Hal Leonard The Rollicking Piano Bar 311742 songbook that provides piano, vocal and guitar arrangements for more than 60 songs, such as \"Jack and Diane,\" \"Piano Man,\" \"Sweet Caroline\" and more.  Tracks Included  1. All Shook Up 2. American Pie 3. Bad, Bad Leroy Brown 4. Barbara Ann 5. Bennie and the Jets 6. Blue Suede Shoes  7. Blueberry Hill 8. Brown Eyed Girl 9. Celebrate 10. Copacabana (At the Copa) 11. Crocodile Rock 12. Dancing Queen 13. December 1963 (Oh, What a Night) 14. Great Balls of Fire  15. Hang on Sloopy 16. Hey Jude 17. I Got You (I Feel Good) 18. I Love Rock 'N Roll  19. I Saw Her Standing There 20. I Will Survive 22. It's Not Unusual 23. Jack and Diane 24. Jailhouse Rock 25. The Joker 26. Kansas City 27. King of the Road 28. Kodachrome TM 29. Lean on Me 30. Love Shack 31. Me and Bobby McGee 32. Mrs. Robinson 33. Mony, Mony 34. Mustang Sally 35. My Girl 36. Ob-La-Di, Ob-La-Da 37. Piano Man 38. Proud Mary 39. Red, Red Wine 40. Respect 41. Ring of Fire 42. Rock Around the Clock 43. Rocky Top 44. Shout 45. (Sittin' On) The Dock of the Bay 46. Summer Nights 47. Surfin' U.S.A. 48. Sweet Caroline 49. Sweet Home Alabama 50. Sweet Home Chicago  51. Take Me Home, Country Roads 52. Takin' Care of Business 53. Thank God I'm a Country Boy 54. These Boots Are Made for Walkin' 55. Twist and Shout 56. Under the Boardwalk 57. Uptown Girl 58. We're Not Gonna Take It 59. Wooly Bully 60. Yellow Submarine  61. You're the One That I Want",
+              "sku": 9852797,
+              "name": "Hal Leonard - Various Artists: The Rollicking Piano Bar Songbook",
+              "salePrice": 19.99,
+              "shortDescription": "HAL LEONARD Various Artists: The Rollicking Piano Bar Songbook: Piano, vocal and guitar sheet music covering a variety of classic hits",
+              "image": "http://img.bbystatic.com/BestBuy_US/images/products/9852/9852797_sa.jpg",
+              "customerReviewAverage": "5.0"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 08 Mar 2016 18:51:32 GMT
+recorded_with: VCR 3.0.1

@@ -6,6 +6,9 @@ class BestBuyPresenter
   end
 
   def products
+    if @data["products"].empty?
+      return [create_product({name: "Sorry, your search returned no results!"})]
+    end
     @data["products"].map{|product_data| create_product(product_data)}
   end
 

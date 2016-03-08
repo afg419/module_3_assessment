@@ -27,7 +27,7 @@ RSpec.feature "User can search BestBuy", type: :feature do
       visit root_path
       fill_in "search", with: "sennheiser headphones white"
       click_on "Search"
-      save_and_open_page
+
       expect(page).to have_selector('.product', count: 6)
       expect(page).to have_selector('.sku', count: 6)
       expect(page).to have_selector('.sale-price', count: 6)
@@ -41,6 +41,19 @@ RSpec.feature "User can search BestBuy", type: :feature do
         expect(page).to have_content "Customer Review Average:"
         expect(page).to have_content "Description: SENNHEISER CX 1.00 Earbud Headphones: Noise-blocking design; dynamic transducer principle; ultrasmall design; 3.5mm connector; 3.9' cable; includes 4 sizes of ear adapters"
       end
+      expect(current_path).to eq "/search"
+    end
+  end
+
+  scenario "A user submits multiple search queries to BestBuy" do
+    VCR.use_cassette 'Best-Buy-NoResults-Search' do
+      visit root_path
+      fill_in "search", with: "sennheiser headphones white black purple red blue daggg"
+      click_on "Search"
+
+      expect(page).to have_selector('.product', count: 1)
+
+      expect(page).to have_content "Sorry, your search returned no results!"
       expect(current_path).to eq "/search"
     end
   end

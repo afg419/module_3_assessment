@@ -2,15 +2,16 @@
 <div class="container">
   <% @best_buy_objects.products.each do |product| %>
   <div class="sku-<%= product.sku %>">
-    <h3 class="product">name: <%= product.name %></h3>
+    <h3 class="product"><%= product.name %></h3>
     <ul>
-      <li>longDescription: <%= product.longDescription%> </li>
-      <li class="sku">Sku: <%= product.sku %></li>
-      <li class="sale-price">Sale Price: $<%= product.salePrice %></li>
-      <img src="<%= product.image %>"style="width:304px;height:228px;">
-      <li class="image-url">Image_url: <%= product.image %></li>
-      <li class="customer-review">Customer Review Average: <%= product.customerReviewAverage %></li>
-      <li class="descritption">Description: <%= product.shortDescription %></li>
+      <% if product.sku %>
+        <li class="sku">Sku: <%= product.sku %></li>
+        <li class="sale-price">Sale Price: $<%= product.salePrice %></li>
+        <img src="<%= product.image %>"style="width:304px;height:228px;">
+        <li class="image-url">Image_url: <%= product.image %></li>
+        <li class="customer-review">Customer Review Average: <%= product.customerReviewAverage %></li>
+        <li class="descritption">Description: <%= product.shortDescription %></li>
+      <% end %>
     </ul>
   </div>
   <% end %>
